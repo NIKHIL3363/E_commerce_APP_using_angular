@@ -1,0 +1,23 @@
+h1{
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.orderimg{
+
+    width:100px
+}
+.orderdata{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.form-button{
+
+    border-color: blueviolet;
+    color: blueviolet;
+}
+.my-orders{
+    margin-bottom: 100px;
+}

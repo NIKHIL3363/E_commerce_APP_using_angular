@@ -1,0 +1,43 @@
+.cart-page
+{
+
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+}
+.cart-page h1{
+
+    text-align: center;
+}
+.details img{
+
+    height: 100px;
+
+}
+.nikhil{
+   justify-content: space-between;
+   align-items: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+.summary
+{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.summary h1{
+    text-align: center;
+}
+.summary ul li{
+
+    display: flex;
+    justify-content: space-between;
+}
+

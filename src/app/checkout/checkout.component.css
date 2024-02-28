@@ -1,0 +1,55 @@
+h1{
+
+     text-align: center;
+     margin-bottom:15px;
+          margin-top: 50px;
+}
+h3{
+
+    text-align: center;
+    margin-bottom:15px;
+          margin-top: 15px;
+          margin-left: 200px;
+}
+.common-form{
+
+    text-align: center;
+    margin-left: 200px;
+
+}
+.form-input{
+  width:60%;
+  margin-top: 10px;
+  border-color: blueviolet;
+
+
+
+}
+.form-button{
+
+    width:60%;
+    margin-top: 10px;
+  border-color: blueviolet;
+
+
+
+}
+.ss{
+text-align: center;
+margin-left: 100px;
+}
+.ss1
+{
+
+margin-right: 50px;
+}
+.col-sm-5{
+    margin-top: 50px;
+}
+.message
+{
+
+  color: green;
+text-align: center;
+margin-top: 100px;
+}

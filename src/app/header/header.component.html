@@ -1,0 +1,60 @@
+<nav class="nav" *ngIf="sellerarea==='default'&&property==='nikhil'">
+    <h1><a routerLink="home">E-Commerce</a></h1> 
+    <div >
+<input #id  type="text" placeholder="search for products" />
+<button (click)="searchproduct1(id.value)">search</button>
+
+
+    </div>
+
+  <li *ngIf="sellerarea==='default'"><a href="" routerLink="home">home</a></li>
+  <li *ngIf="sellerarea==='default'"><a href="" routerLink="user-auth">login</a></li>
+  <li *ngIf="sellerarea==='default'"><a href="" routerLink="cart">Cart({{cartitems}})</a></li>
+  
+ <li  *ngIf="sellerarea==='default'"><a href="" routerLink="seller">seller</a></li>
+
+
+ </nav>
+
+
+
+
+<nav *ngIf="sellerarea!='default' &&property==='nikhil'" class="nav">
+
+    <li><a (click)="logout()">logout</a></li>
+    <li><a routerLink="sellerhome">list</a></li>
+
+
+    <li><a routerLink="products">add products</a></li>
+    <li><a>{{sellername}}</a></li>
+
+</nav>
+<nav *ngIf="property==='komal'"class="nav">
+    <h1><a routerLink="home">E-Commerce</a></h1> 
+
+    <div >
+        <input #id  type="text" placeholder="search for products"/>
+        <button (click)="searchproduct1(id.value)">search</button>
+     </div>
+     <li><a (click)="logoutuser()">logoutuser</a></li>
+     <li>{{username}}</li>
+     <li><a [routerLink]="usercartitems>0?'cart':null">Cart({{usercartitems}})</a></li>
+     <li><a routerLink="myorder">My Orders</a></li>
+
+ 
+
+
+
+     
+</nav>
+
+
+
+
+
+
+
+
+    
+    
+    

@@ -1,0 +1,76 @@
+.f1
+{
+    text-align: center;
+}
+.a
+{
+
+width:30%;
+
+margin-top: 10px;
+    margin-bottom: 10px;
+border-color: blueviolet;
+}
+.b{
+
+
+    margin-bottom: 10px;
+    border-color: blueviolet;
+    width:30%;
+
+}
+.c{
+
+    margin-bottom: 10px;
+    border-color: blueviolet;
+    width:30%;
+
+}
+.d
+{
+
+    border-color: blueviolet;
+    width:10%;
+
+}
+.h1{
+
+
+    text-align: center;
+    color: black;
+    margin-top:50px ;
+}
+.login{
+
+
+    margin-left: 450px;
+}
+.login1{
+
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-color: blueviolet;
+    width:30%;
+
+}
+.login2{
+
+    margin-bottom: 20px;
+    border-color: blueviolet;
+    width:30%;
+
+
+}
+.login3{
+    border-color: blueviolet;
+    width:10%;
+
+
+}
+.invalid
+{
+
+    color:red
+}
+

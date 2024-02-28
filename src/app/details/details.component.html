@@ -1,0 +1,27 @@
+<div class="row search-item">
+    <div class="col-sm-3">
+   <a routerLink="/details/{{key}}"> More Details
+<img src="{{searchproductarray.imageurl}}"alt="" class="search-image">
+ 
+</a>
+
+
+</div>
+<div class="col-sm-8 details">
+<h6 class="productname">{{searchproductarray.productname}}</h6>
+<p class="price"><b>Price:{{searchproductarray.productprice}}</b></p>
+<p class="color"><span>Description:{{searchproductarray.productsdescription}}</span><span class="category">Category :Mobile</span></p>
+<button *ngIf="!removecart"  class ="cart" (click)="addtocart()">Add to cart</button>
+<button  *ngIf="removecart"  class="cart" (click)="removetocart(searchproductarray.prouductid)">Remove  to cart</button>
+
+<button class="buy">buy now</button>
+<div class="quantity">
+    <button (click)="handle('minus')"> - </button>
+    <input type="text"  value="{{productquantity}}" />
+    <button (click)="handle('plus')">+ </button>
+
+</div>
+</div>
+</div>
+
+   

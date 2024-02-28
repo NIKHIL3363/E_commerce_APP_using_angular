@@ -1,0 +1,39 @@
+<div class="user" *ngIf="signup">
+<h1 class="h1">User Sign Up form</h1>
+<form #userform="ngForm" (ngSubmit)="usersignup(userform.value)" class="f1">
+
+    <input 
+    type="text" placeholder="enter username" name="username"  ngModel class="a" /><br>
+    <input 
+    type="text" placeholder="enter email" name="email"  ngModel class="b"/><br>
+    <input 
+    type="text" placeholder="enter password" name="password"  ngModel  class="c"/><br>
+
+
+    <button class="d">sign up</button>
+</form>
+<a (click)="show()" class="login">Already have a account?Click Here To Log In</a>
+</div>
+<div *ngIf="login">
+
+    <h1 class="h1">User LOGIN form</h1>
+
+    <form #userform="ngForm" (ngSubmit)="userlogin(userform.value)" class="f1">
+
+        <input 
+        type="text" placeholder="enter username" name="username"  ngModel class="login1" required /><br>
+        <input 
+        type="text" placeholder="enter password" name="password"  ngModel  class="login2" required /><br>
+    
+
+        <button class="login3">LOGIN</button><br>
+        <span class="invalid" *ngIf="invalid">invalid credentials</span>
+        
+
+    </form>
+
+<a (click)="show()" class="login">NOT user SIGN UP</a>
+
+
+</div>
+

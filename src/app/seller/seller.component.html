@@ -1,0 +1,30 @@
+<h1>seller authentication</h1>
+<div class="seller" *ngIf="formshow">
+    <form class="f1" #form="ngForm" (ngSubmit)="signup(form.value)">
+     <input type="text" placeholder="username"  name="username" ngModel/><br>
+     <input type="text" placeholder="password"  name="password" ngModel/><br>
+     <input type="email" placeholder="email"    name="emailid" ngModel /><br>
+
+     <button class="d">signup</button>
+
+
+    </form>
+
+
+<a class='link1' (click)="changeformshow()">alread a user click here to log in</a>
+</div>
+
+
+<div class="seller" *ngIf="!formshow">
+    <p class="invalid"><b>{{str1}}</b></p>
+    <form class="f1" #form="ngForm" (ngSubmit)="login(form.value)">
+     <input type="text" placeholder="username"  name="username" ngModel/><br>
+     <input type="text" placeholder="password"  name="password" ngModel/><br>
+
+     <button class="d">login</button>
+
+
+    </form>
+
+    <a class='link1' (click)="changeformshow()">not regisetered sign up</a>
+</div>

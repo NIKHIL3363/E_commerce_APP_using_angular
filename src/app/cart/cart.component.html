@@ -1,0 +1,65 @@
+<div class="cart-page">
+<h1>cart page</h1>
+<div class="row">
+<div class="col-sm-8 details">
+    <ul class="nikhil" *ngFor="let item of cartitems">
+        <li>
+            <img src="{{item.imageurl}}" alt="">
+
+
+        </li>
+        <li>
+            <span>{{item.productname}}</span>
+        </li>
+        <li>
+            <span>{{item.productprice}}</span>
+
+        </li>
+        <li>
+            <span>{{item.productquantity}}</span>
+            
+        </li>
+        <li>
+
+            <button class="form-button" (click)="removefromcart(item.prouductid)">remove to cart</button>
+        </li>
+
+
+    </ul>
+</div>
+<div class="col-sm-4 summary">
+<h3>Summary</h3>
+
+<ul >
+    <li>
+        <span>Amount</span><span>{{pricesummary.price}}</span>
+
+</li>
+<li>
+    <span>Tax</span><span>{{pricesummary.tax}}</span>
+    
+</li>
+<li>
+    <span>Delhivery</span><span>20</span>
+    
+</li>
+<li>
+    <span>Discount</span><span>{{pricesummary.discount}}</span>
+    
+</li>
+<li><span><h4>Total</h4></span><span><h4>{{pricesummary.total}}</h4></span>
+
+</li>
+<li> <button (click)="checkout()" class="checkout">checkout</button></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div class="empty cart" *ngIf="noitemsincart">
+
+    <p color="red">cart is empty</p>
+
+</div>
